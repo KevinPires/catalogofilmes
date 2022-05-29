@@ -19,7 +19,7 @@ response (200)
 
 (2)
 /post        /filme/       -> inserção de registro
-request body (200)
+request body 
 {
     "nome":"",
     "sinopse":"",
@@ -31,6 +31,29 @@ request body (200)
 }
 
 response (200)
+{
+    "id":1,
+    "nome":"",
+    "sinopse":"",
+    "avaliacao":0.0,
+    "lancamento":2020-10-00,
+    "disponivel": true,
+    "imagem": "",
+    "usuario": 0
+}
+
+////////////////////////////////
+
+(2.1)
+/put         /filme/:id/imagem       -> inserção de registro
+request (form)
+{
+    
+    "imagem": "",
+ 
+}
+
+response (204)
 {
     "id":1,
     "nome":"",
